@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
@@ -5,10 +6,12 @@
   box-sizing: border-box;
   font-family: "montserrat";
 }
-
 .home-body {
-  color: white;
-  background-color: black;
+    color: white;
+    background-color: black;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 #logo {
   margin: 0px 5px;
@@ -78,11 +81,6 @@
     z-index: -1; /* Place it behind other content */
     opacity: 0.2; /* Set the desired opacity */
   }
-#home h1 {
-  font-size: 4rem;
-  font-weight: 700;
-  color: #04e125e0;
-}
 #home .text {
   font-size: 1.2rem;
   color: rgb(124, 152, 134);
@@ -283,7 +281,7 @@ color: white;
 height: 6vh;
 border: 1px solid rgba(235, 231, 231, 0.4);
 background-color: rgba(23,23,23,0.7);
-width: 40vh;
+width: 35vh;
 }
 #comment{
     height: 15vh;
@@ -296,6 +294,7 @@ width: 40vh;
 .separation{
     height: 9px;
     background-color: rgba(52, 50, 50, 0.575);;
+    width: 100vw;
 }
 footer{
     background-color: black;
@@ -315,7 +314,7 @@ footer{
 }
 #loader h1{
     color:black;
-    font-size: 50px;
+    font-size: 4rem;
     font-weight: 700;
 }
 @media screen and (max-width:340px){
@@ -337,7 +336,7 @@ footer{
     .fieldscontainer{
         height: 100vh;
     }
-    #fields{
+    #fields{ 
         grid-template-columns: repeat(3,1fr);
     }
     .cardimg{
@@ -347,4 +346,4 @@ footer{
         width: 316px;
         padding-inline: 2.5rem;
     }
-}
+}s
