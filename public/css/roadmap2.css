@@ -42,53 +42,101 @@
 #movingdiv .move img{
     height: 1rem;
 }
+#loader h1{
+    font-size: 3rem;
+}
 @media screen and (max-width:500px){
+    #loader h1{
+        font-size: 2rem;
+    }
     .form{
-        width: 40vh;
+        width: 39vh;
     }
     .email{
-        width: 35vh;
+        padding: 12px;
+        width: 34vh;
+    }
+    footer{
+        font-size: 15px;
     }
 }
 @media screen and (max-width:395px){
-   #home:before{
-    width: 105vw;
-   }
+    body{
+        background-size: contain;
+    }
    #home{
-    width: 105vw;
     padding: 3px;
    }
-   #navbar{
-    width: 105vw;
-   }
-   #navbar:before{
-    width: 105vw;
-   }
+
    .form{
     width: 35vh;
 }
 .email{
-    width: 30vh;
+    padding: 10px;
+    width:25vh;
+}
+footer{
+    font-size: 14px;
+}
+.card img{
+    width: 300px;
+}
+.carddata{
+    width: 260px;
 }
 }
 @media screen and (max-width:355px){
-   #home:before{
-    width: 111vw;
-   }
-   #home{
-    width: 111vw;
-    padding: 3px;
-   }
-   #navbar{
-    width: 111vw;
-   }
-   #navbar:before{
-    width: 111vw;
-   }
+   body{
+    background-size: contain;
+}
    .form{
-    margin-left: 32px;
+    width: 32vh;
+}
+.email{
+    padding: 10px;
+    width: 20vh;
+}
+footer{
+    font-size: 13.5px;
 }
 }
+@media screen and (max-width:340px){
+    #home{
+        width: 110vw;
+    }
+    #home::before{
+        width: 110vw;
+    }
+    #navbar{
+        width: 110vw;
+    }
+    #navbar::before{
+        width: 110vw;
+    }
+    .fieldcontainer{
+        width: 110vw;
+    }
+    .contact{
+        width: 110vw;
+    }
+    .separation{
+        width: 110vw;
+    }
+    footer{
+        width: 110vw;
+    }   
+    .card img{
+        width: 290px;
+    }
+    .carddata{
+        width: 250px;
+    }
+    #loader{
+        width: 110vw;
+        height: 100vh;
+    }
+}
+
 @media screen and (max-height:750px){
     #navbar{
         height: 7.5rem;
@@ -98,5 +146,19 @@
     }
     #home::before{
         height: 37.5rem;
+    }
+}
+@media screen and (max-height:500px){
+    #navbar{
+        height: 7.5rem;
+    }
+    #home{
+        height: 28rem;
+    }
+    #home::before{
+        height: 35.5rem;
+    }
+    #loader{
+        height: 100vh;
     }
 }
